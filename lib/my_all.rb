@@ -7,5 +7,10 @@ def my_all?(collection)
     new_ary << yield(collection[i])
     i+=1
   end
-  new_ary
+
+  if new_ary.include?(false)
+    false
+  else
+    true
+  end
 end
